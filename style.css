@@ -39,19 +39,19 @@ div {
 	height: 100%;
 	width: 100px;
 	left: 100px;
-	-webkit-animation: roll 0.25s infinite;
+	-webkit-animation: roll .5s infinite linear;
 }
 #center {
 	height: 100%;
 	width: 100px;
 	left: 200px;
-	-webkit-animation: roll 0.25s infinite;
+	-webkit-animation: roll .4s infinite linear;
 }
 #outer {
 	height: 100%;
 	width: 100px;
 	left: 300px;
-	-webkit-animation: roll 0.25s infinite;
+	-webkit-animation: roll .6s infinite linear;
 }
 #left {
 	height: 100%;
@@ -69,45 +69,45 @@ div {
 .yellow {
 	width: 100%;
 	height: 70px;
-	top: -70px;
 	background-color: yellow;
 	border: 1px solid black;
+	position: relative;
 }
 .purple {
 	width: 100%;
 	height: 70px;
-	top: 0px;
 	background-color: purple;
 	border: 1px solid black;
+	position: relative;
 }
 .aqua {
 	width: 100%;
 	height: 70px;
-	top: 70px;
 	background-color: aqua;
 	border: 1px solid black;
+	position: relative;
 }
 .grey {
 	width: 100%;
 	height: 70px;
-	top: 140px;
 	background-color: grey;
 	border: 1px solid black;
+	position: relative;
 }
 .green {
 	width: 100%;
 	height: 70px;
-	top: 210px;
 	background-color: green;
 	border: 1px solid black;
+	position: relative;
 }
 
 @-webkit-keyframes roll {
 	0% {
-		-webkit-transform: translate(0,70px);
+		-webkit-transform: translate(0,0);
 	}
 	100% {
-		-webkit-transform: translate(0, -70px);
+		-webkit-transform: translate(0, -360px);
 	}
 }
 
