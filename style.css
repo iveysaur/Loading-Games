@@ -4,10 +4,11 @@ body {
 
 div {
 	display: block;
-	position: absolute;
+	position: relative;
 }
 
 #game {
+	position: absolute;
 	background-color: white;
 	height: 310px;
 	width: 500px;
@@ -15,91 +16,59 @@ div {
 	overflow: hidden;
 }
 
-#top {
+.row {
 	width: 100%;
+}
+#top {
 	background-color: red;
 	height: 50px;
-	position: relative;
 	z-index: 1;
 }
 #middle {
-	width: 100%;
 	height: 210px;
-	position: relative;
 }
 #bottom {
-	width: 100%;
 	background-color: red;
 	height: 50px;
-	position: relative;
 	z-index: 1;
 }
 
-#inner {
+.column {
+	display: inline-block;
 	height: 100%;
 	width: 100px;
-	left: 100px;
-	-webkit-animation: roll .5s infinite linear;
-}
-#center {
-	height: 100%;
-	width: 100px;
-	left: 200px;
-	-webkit-animation: roll .4s infinite linear;
-}
-#outer {
-	height: 100%;
-	width: 100px;
-	left: 300px;
-	-webkit-animation: roll .6s infinite linear;
+	margin: 0 -2px;
 }
 #left {
-	height: 100%;
 	background-color: blue;
-	width: 100px;
-	left: 0px;
+}
+.spinner {
+	-webkit-animation: roll .5s infinite linear;
 }
 #right {
-	height: 100%;
 	background-color: blue;
-	width: 100px;
-	right: 0px;
+}
+
+.slot {
+	width: 100%;
+	height: 70px;
+	border: 1px solid black;
 }
 
 .yellow {
-	width: 100%;
-	height: 70px;
 	background-color: yellow;
-	border: 1px solid black;
-	position: relative;
 }
 .purple {
-	width: 100%;
-	height: 70px;
 	background-color: purple;
-	border: 1px solid black;
-	position: relative;
 }
 .aqua {
-	width: 100%;
-	height: 70px;
 	background-color: aqua;
-	border: 1px solid black;
-	position: relative;
 }
 .grey {
-	width: 100%;
-	height: 70px;
 	background-color: grey;
-	border: 1px solid black;
-	position: relative;
 }
 .green {
-	width: 100%;
-	height: 70px;
 	background-color: green;
-	border: 1px solid black;
-	position: relative;
 }
 
 @-webkit-keyframes roll {
