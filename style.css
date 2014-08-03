@@ -47,6 +47,7 @@ div {
 }
 #stop:hover {
 	background-color: grey;
+	cursor: pointer;
 }
 
 .column {
