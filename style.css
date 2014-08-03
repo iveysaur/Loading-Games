@@ -26,6 +26,7 @@ div {
 }
 #middle {
 	height: 210px;
+	overflow: hidden;
 }
 #bottom {
 	background-color: red;
@@ -33,26 +34,43 @@ div {
 	z-index: 1;
 }
 
+#stop {
+	position: absolute;
+	width: 300px;
+	line-height: 30px;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: 10px;
+	text-align: center;
+	background-color: white;
+	border: 1px solid black;
+}
+#stop:hover {
+	background-color: grey;
+}
+
 .column {
 	display: inline-block;
 	height: 100%;
 	width: 100px;
-	margin: 0 -2px;
+	margin-left: -3px;
 }
 #left {
 	background-color: blue;
+	margin-left: 0;
 }
 .spinner {
 	-webkit-animation: roll .5s infinite linear;
 }
 #right {
 	background-color: blue;
+	margin-left: -7px;
 }
 
 .slot {
 	width: 100%;
 	height: 70px;
-	border: 1px solid black;
+	outline: 1px solid black;
 }
 
 .yellow {
@@ -76,7 +94,7 @@ div {
 		-webkit-transform: translate(0,0);
 	}
 	100% {
-		-webkit-transform: translate(0, -360px);
+		-webkit-transform: translate(0, -350px);
 	}
 }
 

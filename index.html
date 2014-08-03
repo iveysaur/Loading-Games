@@ -9,7 +9,7 @@
 		<div id="top" class="row"></div>
 		<div id="middle" class="row">
 			<div id="left" class="column"></div>
-			<div class="column spinner">
+			<div id="spinner1" class="column spinner">
 				<div class="yellow slot"></div>
 				<div class="purple slot"></div>
 				<div class="aqua slot"></div>
@@ -19,7 +19,7 @@
 				<div class="purple slot"></div>
 				<div class="aqua slot"></div>
 			</div>
-			<div class="column spinner">
+			<div id="spinner2" class="column spinner">
 				<div class="yellow slot"></div>
 				<div class="purple slot"></div>
 				<div class="aqua slot"></div>
@@ -29,7 +29,7 @@
 				<div class="purple slot"></div>
 				<div class="aqua slot"></div>
 			</div>
-			<div class="column spinner">
+			<div id="spinner3" class="column spinner">
 				<div class="yellow slot"></div>
 				<div class="purple slot"></div>
 				<div class="aqua slot"></div>
@@ -41,8 +41,11 @@
 			</div>
 			<div id="right" class="column"></div>
 		</div>
-		<div id="bottom" class="row"></div>
+		<div id="bottom" class="row">
+			<div id="stop" onClick="stop()">Stop</div>
+		</div>
 	</div>
+	<script type="text/javascript" src="spinner.js"></script>
 </body>
 </html>
 
