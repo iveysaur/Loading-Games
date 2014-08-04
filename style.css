@@ -1,5 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 body {
 	background-color: #eee;
+	font-family: 'Open Sans', sans-serif;
 }
 
 div {
@@ -9,7 +12,7 @@ div {
 
 #game {
 	position: absolute;
-	background-color: #C0C0C0;
+	background-color: #fff;
 	height: 310px;
 	width: 400px;
 	left: 50%;
@@ -17,6 +20,7 @@ div {
 	top: 50%;
 	margin-top: -155px;
 	overflow: hidden;
+	border: 1px solid #ccc;
 }
 
 .row {
@@ -25,7 +29,11 @@ div {
 
 #top {
 	height: 50px;
-	border-bottom: 1px solid black;
+	background-color: #29b6f6;
+	border-bottom: 1px solid #0277bd;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
 }
 
 #middle {
@@ -45,12 +53,13 @@ div {
 	margin-left: -150px;
 	margin-top: 8px;
 	text-align: center;
-	background-color: #eee;
-	border: 1px solid black;
+	background-color: #29b6f6;
+	border: 1px solid #0277bd;
+	color: #fff;
 }
 
 #stop:hover {
-	background-color: grey;
+	background-color: #039be5;
 	cursor: pointer;
 }
 
@@ -78,7 +87,7 @@ div {
 .slot {
 	width: 100%;
 	height: 70px;
-	outline: 1px solid black;
+	outline: 1px solid #333;
 }
 
 .banana {
