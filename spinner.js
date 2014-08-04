@@ -1,5 +1,8 @@
-var current = 1;
-var button = document.getElementById("stop");
+var button, current = 1;
+
+window.addEventListener("load", function() {
+	button = document.getElementById("stop");
+});
 
 function stop() {
 	var ele = document.getElementById("spinner" + current);
